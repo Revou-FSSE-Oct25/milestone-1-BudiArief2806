@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KTVBmApB)
 
-# Portofoli Arief Budianto
+# Portofolio Arief Budianto
 
 ## Overview
 
@@ -15,9 +15,11 @@ Mengunakan bahasa : HTML dan sedikit CSS
 
 ## Features implemented
 
-Say menggunakan fitur :
+Saya menggunakan fitur :
 Header,H1 (membuat judul dan sedikit background)
-main,section, figure dan nav (menceritakan profile saya , ada tombol untuk mengakses sosial media dan ada beberapa dokemtasinya )
+main,section, figure dan nav (menceritakan profile saya , ada tombol untuk mengakses sosial media dan ada beberapa dokumentasinya )
+footer,ul,li,detail,video source (menambahkan daya tarik pelanggan yang mengujung ke website ,melihat aktivitas yang sudah saya tekunkan )
+section, form ,fieldshet,text area ( untuk membuat feeadback me ,email,nama dan kembali ke halaman utama)
 
 ## deploy git action
 
