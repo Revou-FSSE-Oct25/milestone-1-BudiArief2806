@@ -17,9 +17,35 @@ Mengunakan bahasa : HTML dan sedikit CSS
 
 Saya menggunakan fitur :
 Header,H1 (membuat judul dan sedikit background)
-main,section, figure dan nav (menceritakan profile saya , ada tombol untuk mengakses sosial media dan ada beberapa dokumentasinya )
-footer,ul,li,detail,video source (menambahkan daya tarik pelanggan yang mengujung ke website ,melihat aktivitas yang sudah saya tekunkan )
-section, form ,fieldshet,text area ( untuk membuat feeadback me ,email,nama dan kembali ke halaman utama)
+main : untuk konten utama, isi dari konten utama ada section dan from
+section : untuk mengelompokkan konten contoh seperti biodata ku ,3 tombol
+fiqure atribute style : kegunaannya untuk membuat warna warni portofolioku dan wajin di gunakan apabila ada gambar di web
+img : Upload foto
+figcaption : subjudul gambar
+
+### About me
+
+Section aria-label : Membatu untuk screen reader adalah perangkat lunak yang membantu disabilitas (tunanetra)
+h2 : memberikan teks subjudul
+p : paragraf atau membuat teks/kalimat
+ul : untuk membuat struktur li
+li : daftar list yang membuat test rapih
+
+### contack me
+
+pengunaan fitur utama masih menggunakan section aria label.
+strong : untuk menebalkan test
+from : Pengelompokan konten form seperti email dll
+fieldset : membungkus test seperti email ,nama dll
+legend: bisa disebutkan seperti judul atau subjudul
+label : untuk mengelompokan input dan
+input : untuk mengisi nama dan email
+atribut placeholder : Memberikan test agar terlihat untuk menulisnya di kolom tersebut
+atribut required : wajib mengisi nama dan email sebelum submit
+
+### Projek
+
+article : untuk mengelompokan konten , teknologi screen reader
 
 ## deploy git action
 
