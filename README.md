@@ -37,13 +37,16 @@ di halaman ini impian saya bisa lebih baik dari hari sebelumnya
 
 ### Screnshot
 
-![alt text](<img-readme/Screenshot 2025-11-21 204643.png>)
+![alt text](img-readme/body.png)
 
     #### Memberikan warna warni background web Bg-rgba-90derajat
 
-![alt text](<img-readme/Screenshot 2025-11-21 205317.png>)
+![alt text](img-readme/menuhalaman.png)
 
     #### ini adalah code agar masuk ke halaman berikutnya
+
+![alt text](img-readme/halaman.png)
+merapihkan file agar terstruktur dan rapih
 
 ## deploy git action
 
