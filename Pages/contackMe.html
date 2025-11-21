@@ -4,83 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Arief Budianto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
+    <header class="flex flex-col text-center font-extrabold p-8">
       <h1>Follow & Contact Me</h1>
     </header>
 
-    <main>
-      <section aria-label="Contact Information">
+    <main class="flex flex-col items-center text-sm text-center">
+      <section class="w-full max-w-lg bg-white shadow rounded-lg p-6 mb-8">
         <p>
           Anda dapat menghubungi kami melalui WhatsApp atau Instagram di bawah
           ini:
         </p>
-        <ul>
-          <li>
+        <ul class="mt-4 text-left">
+          <li class="mb-2">
             <strong>WhatsApp:</strong>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6287777282806"
               target="_blank"
               rel="noopener noreferrer"
+              class="text-green-600 underline"
             >
-              +62 812-3456-7890
+              +628777282806
             </a>
           </li>
           <li>
             <strong>Instagram:</strong>
             <a
-              href="https://instagram.com/budiarief"
+              href="https://instagram.com/a.budiarief"
               target="_blank"
               rel="noopener noreferrer"
+              class="text-blue-600 underline"
             >
-              @budiarief
+              @a.budiarief
             </a>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Send Message">
-        <form>
-          <fieldset>
-            <legend>Send a Message</legend>
+      <section
+        class="w-full max-w-lg bg-gradient-to-r from-yellow-300 via-yellow-200 to-yellow-100 rounded-lg p-6 mb-8"
+        aria-label="Send Message"
+      >
+        <form class="flex flex-col">
+          <h2 class="mb-4 font-extrabold">Send a Message</h2>
 
-            <label for="name">Your Name:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              required
-            /><br /><br />
+          <label class="text-blue-900 mb-1" for="name">Your Name:</label>
+          <input
+            class="shadow-md px-3 py-2 rounded-lg mb-4"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
 
-            <label for="email">Email Address:</label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email address"
-              required
-            /><br /><br />
+          <label class="text-blue-900 mb-1" for="email">Email Address:</label>
+          <input
+            class="shadow-lg px-3 py-2 rounded-lg mb-4"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
 
-            <label for="message">Your Message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your message here"
-              rows="6"
-              cols="40"
-            ></textarea
-            ><br /><br />
+          <label class="text-blue-900 mb-1" for="message">Your Message:</label>
+          <textarea
+            class="text-center shadow-md px-3 py-2 rounded-lg mb-4"
+            id="message"
+            name="message"
+            placeholder="Your message here"
+            rows="6"
+            cols="40"
+          ></textarea>
 
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-          </fieldset>
+          <nav class="flex gap-4 mb-4">
+            <button
+              class="shadow-md bg-white rounded-lg px-4 py-2"
+              type="reset"
+            >
+              Reset
+            </button>
+            <button
+              class="shadow-md bg-white rounded-lg px-4 py-2"
+              type="submit"
+            >
+              Submit
+            </button>
+          </nav>
+
+          <section
+            class="bg-white rounded-lg shadow-lg flex items-center justify-center text-center p-4"
+          >
+            <a href="https://bekasikota.go.id/" class="mr-4 flex items-center">
+              <img
+                src="../Image/location_foto.jpg"
+                alt="Location Icon"
+                class="w-10 h-10 animate-spin"
+              />
+            </a>
+            <section>
+              <h2 class="text-lg font-semibold mb-0.5">Home</h2>
+              <p class="text-sm text-gray-600">Klik icon</p>
+            </section>
+          </section>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="flex flex-col rounded-md text-center mt-4">
       <p>&copy; 2025 Arief Budianto</p>
     </footer>
   </body>

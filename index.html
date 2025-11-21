@@ -3,250 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Budi</title>
+    <title>Portfolio Arief Budianto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford:
+      }
+    </style>
   </head>
-
-  <body>
-    <header
-      style="
-        text-align: center;
-        padding: 20px;
-        background-color: #e35c3f;
-        color: white;
-      "
+  <body
+    class="bg-[linear-gradient(70deg,rgba(255,150,50,300.2),rgba(0,0,255,0.2))] h-64 w-full"
     >
-      <h1>Portofolio Arief Budianto</h1>
     </header>
-    <main>
+    <main class="max-w-5xl mx-auto p-6 ">
+      <!-- Profile -->
       <section
-        aria-label="Profile"
-        style="
-          text-align: center;
-          padding: 20px;
-          background-color: #f5f5f5;
-          border-radius: 10px;
-          max-width: 400px;
-          margin: 0 auto;
-        "
+        class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6"
       >
-        <figure style="margin: 0">
-          <img
-            src="Image/Shell_foto.png"
-            width="100"
-            alt="Shell Foto"
-            style="display: block; margin: 0 auto 15px"
-          />
-          <figcaption>
-            <h2 style="margin-bottom: 15px; font-size: 2rem; color: #333">
-              ARIEF BUDIANTO
-            </h2>
-            <img
-              src="Image/Budi_Foto.jpg"
-              alt="Foto Budi"
-              style="
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                object-fit: cover;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                margin-bottom: 15px;
-              "
-            />
-            <p style="font-style: italic; color: #666; margin-bottom: 20px">
-              I'm Student Revou 2025
-            </p>
-            <nav aria-label="Profile actions">
-              <a
-                href="Pages/AboutMe.html"
-                style="text-decoration: none; margin-right: 10px"
-              >
-                <button
-                  style="
-                    padding: 10px 20px;
-                    border: none;
-                    background-color: #e35c3f;
-                    color: white;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    font-weight: bold;
-                  "
-                >
-                  AboutMe
-                </button>
-              </a>
-              <a href="Pages/contackMe.html" style="text-decoration: none">
-                <button
-                  style="
-                    padding: 10px 20px;
-                    border: none;
-                    background-color: #555;
-                    color: white;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    font-weight: bold;
-                  "
-                >
-                  Private
-                </button>
-              </a>
-              <a href="Pages/ProjekMe.html" style="text-decoration: none">
-                <button
-                  style="
-                    padding: 10px 20px;
-                    border: none;
-                    background-color: #555;
-                    color: white;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    font-weight: bold;
-                  "
-                >
-                  Proyek
-                </button>
-              </a>
-            </nav>
-          </figcaption>
-        </figure>
+        <img
+          src="Image/Budi_Foto.jpg"
+          alt="Shell Logo"
+          class="w-40 h-40 object-contain rounded-full bg-yellow-400 shadow-md"
+        />
+        <nav>
+          <h1 class="text-2xl md:text-3xl font-extrabold text-red-600 mb-2 font-inter ">
+            ARIEF BUDIANTO
+          </h1>
+          <p class="italic text-gray-600 mb-2">Student at RevoU 2025</p>
+          <p class="text-gray-700 max-w-lg">
+            Software engineering student focused on web development and database
+            management. Hands-on learner committed to building portfolio
+            projects using the latest technologies.
+          </p>
+        </nav>
       </section>
-      <form
-        style="
-          background-color: #e35c3f;
-          padding-bottom: 20px;
-          margin-top: 30px;
-        "
-      >
-        <section
-          aria-label="Experience and Interests"
-          class="content"
-          style="
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-          "
+      <!-- Navigation -->
+      <nav class="flex justify-center flex-wrap gap-4 mt-8 ">
+        <a
+          href="Pages/AboutMe.html"
+          class="px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition"
+          >About Me</a
         >
-          <article
-            style="flex: 1 1 250px; max-width: 250px; text-align: center"
-          >
-            <h2>Experience</h2>
-            <img
-              src="Image/Budi_scharge.jpg"
-              alt="Discharge"
-              class="img-fluid"
-              style="width: 100%; height: auto"
-            />
-            <h3>Discharge</h3>
-            <p>Ini adalah Kegiatan Pengisian ulang BBM</p>
-            <p>Kapasitas 8000L - 32000L</p>
-          </article>
+        <a
+          href="Pages/contackme.html"
+          class="px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition"
+          >Contact Me</a
+        >
+        <a
+          href="Pages/projekme.html"
+          class="px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition"
+          >Projects</a
+        >
+      </nav>
 
-          <article
-            style="flex: 1 1 250px; max-width: 250px; text-align: center"
+      <!-- Experience & Interests (Grid layout, responsive) -->
+      <section class="mt-12" aria-label = "pengenalan">
+        <h2 class="text-red-600 text-xl md:text-3xl font-bold text-center mb-8">
+          Experience and Interests
+        </h2>
+        <nav class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Card example -->
+          <figure
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400" 
           >
-            <h2>Experience</h2>
+            <img
+              src="Image/Shell_foto.png"
+              alt="Experience Shell"
+              class="w-20 h-20 object-contain rounded-full mb-2"
+            />
+            <h3 class="text-lg font-semibold mb-1">SHELL</h3>
+            <dd class="text-gray-600 text-sm">
+              SPBU Swasta yang memiliki kualitas bahan bakar berkualitas seperti motto perusahaan
+            </dd>
+          </figure>
+          <figure
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
+          "aria-label">
             <img
               src="Image/Budi_Foto.jpg"
               alt="Shift Manager"
-              class="img-fluid"
-              style="width: 100%; height: auto"
+              class="w-20 h-20 object-contain rounded-full mb-2"
             />
-            <h3>Shift Manager</h3>
-            <p>Tugas Mengatur operasional, Absensi dan Sales</p>
-            <p>Best employee</p>
-          </article>
-
-          <article
-            style="flex: 1 1 250px; max-width: 250px; text-align: center"
+            <h3 class="text-lg font-semibold mb-1">Shift Manager</h3>
+            <dd class="text-gray-600 text-sm">
+              Mengatur operasional, absensi, sales.<br />Best employee.
+            </dd>
+          </figure>
+          <figure
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
           >
-            <h2>My Home</h2>
             <img
               src="Image/Bekasi_kota.png"
               alt="Bekasi Kota"
-              class="img-fluid"
-              style="width: 100%; height: auto"
+              class="w-20 h-20 object-contain rounded-full mb-2"
             />
-            <h3>Bekasi Kota</h3>
-            <p>Ini adalah Nama kota kelahiranku</p>
-            <p>Banyak kenangan & Pembelajaran</p>
-          </article>
-
-          <article
-            style="flex: 1 1 250px; max-width: 250px; text-align: center"
+            <h3 class="text-lg font-semibold mb-1">Bekasi Kota</h3>
+            <dd class="text-gray-600 text-sm">
+              Kota kelahiran,penuh pembelajaran dan kenangan.
+            </dd>
+          </figure>
+          </nav>
+         <section class=" mt-8 items-center" >
+          <figure
+          class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
           >
-            <h2>My Hobby</h2>
-            <img
-              src="Image/Adventure_Foto.jpg"
-              alt="My Trip and Adventure"
-              class="img-fluid"
-              style="width: 100%; height: auto"
-            />
-            <h3>My Trip & Adventure</h3>
-            <p>Melihat pemandangan alam</p>
-            <p>Kunci dari kebahagiaan</p>
-          </article>
+          <img
+          src="Image/Adventure_Foto.jpg"
+          alt="My hooby"
+          class=" flex inline-flex rounded-full mb-2 h-40 w-40 "
+          />
+          <h3 class="text-lg font-semibold mb-1">My hobby</h3>
+          <dd class="text-gray-600 text-sm">
+            My hobbies are traveling, fixing broken cell phones and swimming.
+          </dd>
+           
         </section>
-      </form>
-
-      <section aria-label="Hobby Documentation" class="documentation">
-        <h2 style="color: #e35c3f">Dokumentasi Hobby</h2>
-        <ul style="list-style: none; padding: 0">
-          <li>
-            <p>Healing</p>
-            <details>
-              <video width="50%" height="360" controls>
-                <source src="Video/Jalan_Jalan.mp4" type="video/mp4" />
-              </video>
-            </details>
-          </li>
-          <li>
-            <p>Swimming with nephew</p>
-            <details>
-              <video width="50%" height="360" controls>
-                <source src="Video/Berenang_Jalan.mp4" type="video/mp4" />
-              </video>
-            </details>
-          </li>
-          <li>
-            <p>Play Badminton</p>
-            <details>
-              <video width="50%" height="360" controls>
-                <source src="Video/Bdminton_Jalan.mp4" type="video/mp4" />
-              </video>
-            </details>
-          </li>
-          <li>
-            <p>Service Handphone</p>
-            <details>
-              <video width="50%" height="360" controls>
-                <source src="Video/Service_Jalan.mp4" type="video/mp4" />
-              </video>
-            </details>
-          </li>
-          <li>
-            <p>Music</p>
-            <details>
-              <video width="50%" height="360" controls>
-                <source src="Video/Adele_Jalan.mp4" type="video/mp4" />
-              </video>
-            </details>
-          </li>
-        </ul>
+        
       </section>
-
-      <nav>
-        <a href="#top">🔝 Kembali ke Profile</a>
-      </nav>
-    </main>
-
-    <footer
-      style="
-        text-align: center;
-        padding: 25px;
-        font-size: 14px;
-        color: rgb(26, 24, 24);
-      "
-    >
-      &copy; 2025 BudiArief.
+      <section class=" flex  flex-col shadow bg-white mt-8">
+        <h4 class="text-2xl text-center mt-8 decoration-transparent font-extrabold ">Dokumentasi</h4>
+        <article class=" font-bold mt-4"> 
+          <h5>
+          My trip and adventure
+          </h5>
+          </article>
+        <details>
+          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+             src="Video/Jalan_Jalan.mp4">
+          </iframe>
+        </details>
+        <article class=" font-bold mt-4">
+          <h5>Music</h5></article>
+        <details>
+          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+             src="Video/Adele_Jalan.mp4">
+          </iframe>
+        </details>
+         <article class=" font-bold mt-4">
+          <h5>Swimming</h5></article>
+        <details>
+          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+             src="Video/Berenang_Jalan.mp4">
+          </iframe>
+        </details> 
+        </details>
+         <article class=" font-bold mt-4">
+          <h5>Service Handphone</h5></article>
+        <details>
+          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+             src="Video/Service_Jalan.mp4">
+          </iframe>
+        </details> 
+      </section>
+    </main> 
+    <footer class="bg-gray-200 text-gray-600 text-center p-4 mt-12 text-sm">
+      &copy; 2025 Arief Budianto. All rights reserved.
     </footer>
   </body>
 </html>
