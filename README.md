@@ -35,15 +35,18 @@ Pengujung bisa menghubungkan saya pribadi seperti :WA,IG
 
 di halaman ini impian saya bisa lebih baik dari hari sebelumnya
 
-### Screnshot
+### screenshot
 
-![alt text](<img-readme/Screenshot 2025-11-21 204643.png>)
+![alt text](Img-readme/body-readme.png)
 
-    #### Memberikan warna warni background web Bg-rgba-90derajat
+    Memberikan warna warni background web Bg-rgba-90derajat
 
-![alt text](<img-readme/Screenshot 2025-11-21 205317.png>)
+![alt text](Img-readme/halaman-readme.png)
+ini adalah code agar masuk ke halaman berikutnya
 
-    #### ini adalah code agar masuk ke halaman berikutnya
+![alt text](Img-readme/tampilan-readme.png)
+
+    Struktur file agar terlihat rapih
 
 ## deploy git action
 
