@@ -5,7 +5,7 @@
 ## Overview
 
 Website ini menceritakan tentang pengalaman bekerja di SHELL ,Aktifitas keseharian saya.
-Ada beberapa dokkumtasi berupa foto dan videonya .
+Ada beberapa dokumentasi berupa foto dan videonya .
 Ada beberapa fitur di website ini agar para pengujung website mudah melihat profil ,Whatsapp dan Instagram pribadi,menggunakan hirarki dengan baik h1-h5.
 Tujuan membuat website ini Adalah memberikan informasi tentang pengalaman pribadi profesional saya dan memberikan akses untuk kerja sama
 
@@ -35,7 +35,7 @@ Pengujung bisa menghubungkan saya pribadi seperti :WA,IG
 
 di halaman ini impian saya bisa lebih baik dari hari sebelumnya
 
-### Screnshot
+### Screenshot
 
 ![alt text](img-readme/body.png)
 
@@ -46,7 +46,7 @@ di halaman ini impian saya bisa lebih baik dari hari sebelumnya
     #### ini adalah code agar masuk ke halaman berikutnya
 
 ![alt text](img-readme/halaman.png)
-merapihkan file agar terstruktur dan rapih
+    ### merapihkan file agar terstruktur dan rapih
 
 ## deploy git action
 
