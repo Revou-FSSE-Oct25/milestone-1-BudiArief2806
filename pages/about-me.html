@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Me - Arief Budianto</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: "Roboto";
+        src: url("../Roboto/static/Roboto_Condensed-LightItalic.ttf")
+          format("truetype");
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto , sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-gray-50 text-gray-800 antialiased">
+  <body
+    class="font-roboto bg-[linear-gradient(70deg,rgba(255,150,50,300.1),rgba(0,0,255,0.2))] h-64 w-full"
+  >
     <main class="min-h-screen flex flex-col items-center px-4 py-8">
       <section class="max-w-2xl w-full bg-white shadow rounded-lg p-6 mb-8">
         <h1 class="text-2xl font-bold mb-4">About Me</h1>
@@ -41,7 +61,7 @@
       <a href="../index.html" aria-label="button">
         <button
           type="button"
-          class="bg-orange-400 text-white font-semibold py-2 px-4 rounded inline-flex items-center opacity-50 mt-8"
+          class="bg-red-700 shadow shadow-md text-white font-semibold py-2 px-4 rounded inline-flex items-center opacity-50 mt-8"
         >
           <dd class="font-extrabold">Home</dd>
           <svg

@@ -21,6 +21,7 @@ Penggunaan Tailwind CSS utility classes untuk layout, warna, typography, spacing
 ## teknologi
 
 Mengunakan bahasa : HTML tailwind
+font custom : Roboto
 
 ### About me
 
@@ -47,7 +48,11 @@ di halaman ini impian saya bisa lebih baik dari hari sebelumnya
 
 ![alt text](img-readme/halaman.png)
 
-    ### merapihkan file agar terstruktur dan rapih
+    #### merapihkan file agar terstruktur dan rapih
+
+![alt text](img-readme/animasi.png)
+
+    #### Memberikan style animasi Terbaru
 
 ## deploy git action
 

@@ -5,12 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Arief Budianto</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: "Roboto";
+        src: url("Roboto/static/Roboto_SemiCondensed-SemiBoldItalic.ttf") format("truetype");
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ['Roboto', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  <style>
+     @keyframes slideInFromRight {
+     50% {
+      transform: translateX(4vw);
+      opacity: 0;
+      }
+      100% {
+      transform: translateX(0);
+      opacity: 1;
+      }
+    }
+    .animate-slide-in-right {
+     animation: slideInFromRight 3.5s ease forwards;
+    }
+  </style>
+  <style>
+    @keyframes slideInFromLeft {
+    50% {
+    transform: translateX(-4vw);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    }
+    .animate-slide-in-left {
+    animation: slideInFromLeft 3.5s ease forwards;
+    }
+
+  </style>
+  <style>
+    @keyframes slideInFromTop {
+    50% {
+    transform: translateY(-10vw);
+    opacity: -1;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    }
+    .animate-slide-in-top {
+    animation: slideInFromTop 4s ease forwards;
+    }
+
+  </style>
   </head>
   <body
-    class="bg-[linear-gradient(70deg,rgba(255,150,50,300.2),rgba(0,0,255,0.2))] h-64 w-full"
+    class="font-roboto bg-[linear-gradient(70deg,rgba(255,150,50,300.1),rgba(0,0,255,0.2))] h-64 w-full "
     >
     </header>
-    <main class="max-w-5xl mx-auto p-6 ">
+    <main class="max-w-5xl mx-auto p-6 text-md">
       <!-- Profile -->
       <section
         class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6"
@@ -21,11 +85,11 @@
           class="w-40 h-40 object-contain rounded-full bg-yellow-400 shadow-md"
         />
         <nav>
-          <h1 class="text-2xl md:text-3xl font-extrabold text-red-600 mb-2 font-inter ">
+          <h1 class="text-2xl md:text-3xl font-extrabold text-red-600 mb-2 font-inter " aria-label="portofolio">
             ARIEF BUDIANTO
           </h1>
-          <p class="italic text-gray-600 mb-2">Student at RevoU 2025</p>
-          <p class="text-gray-700 max-w-lg">
+          <p class="italic text-md mb-2">Student at RevoU 2025</p>
+          <p class="text-md max-w-lg">
             Software engineering student focused on web development and database
             management. Hands-on learner committed to building portfolio
             projects using the latest technologies.
@@ -35,18 +99,28 @@
       <!-- Navigation -->
       <nav class="flex justify-center flex-wrap gap-4 mt-8 ">
         <a
-          href="pages/aboutme.html"
-          class="px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition"
-          >About Me</a
+        href="pages/aboutme.html"
+        class="px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition animate-slide-in-right"
         >
+        About Me
+        </a>
+
         <a
-          href="pages/contackme.html"
-          class="px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition"
-          >Contact Me</a
+         href="pages/contackme.html"
+          class="relative px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition inline-flex items-center gap-2"
         >
+         Contact Me
+         <span class="relative flex size-3 ">
+         <span
+          class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-600 opacity-75"
+           ></span>
+          <span class="relative inline-flex size-3 rounded-full bg-blue-600"></span>
+          </span>
+        </a>
+
         <a
           href="pages/projekme.html"
-          class="px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition"
+          class="px-5 py-3 rounded-md bg-gray-800 text-white font-semibold hover:bg-gray-900 transition animate-slide-in-left"
           >Projects</a
         >
       </nav>
@@ -59,7 +133,7 @@
         <nav class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <!-- Card example -->
           <figure
-            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400" 
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70" 
           >
             <img
               src="Image/Shell_foto.png"
@@ -67,12 +141,12 @@
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
             <h3 class="text-lg font-semibold mb-1">SHELL</h3>
-            <dd class="text-gray-600 text-sm">
+            <dd class="text-gray-800 text-md">
               SPBU Swasta yang memiliki kualitas bahan bakar berkualitas seperti motto perusahaan
             </dd>
           </figure>
           <figure
-            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
           aria-label = "Shift Manager">
             <img
               src="Image/Budi_Foto.jpg"
@@ -80,12 +154,12 @@
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
             <h3 class="text-lg font-semibold mb-1">Shift Manager</h3>
-            <dd class="text-gray-600 text-sm">
+            <dd class="text-gray-800 text-md">
               Mengatur operasional, absensi, sales.<br />Best employee.
             </dd>
           </figure>
           <figure
-            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
+            class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
           >
             <img
               src="Image/Bekasi_kota.png"
@@ -93,29 +167,29 @@
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
             <h3 class="text-lg font-semibold mb-1">Bekasi Kota</h3>
-            <dd class="text-gray-600 text-sm">
+            <dd class="text-gray-800 text-md">
               Kota kelahiran,penuh pembelajaran dan kenangan.
             </dd>
           </figure>
           </nav>
-         <section class=" mt-8 items-center" >
+         <section class=" mt-8 items-center text-center animate-slide-in-top" >
           <figure
-          class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-orange-400"
+          class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
           >
           <img
           src="Image/Adventure_Foto.jpg"
           alt="My hooby"
-          class=" flex inline-flex rounded-full mb-2 h-40 w-40 "
+          class=" flex inline-flex rounded-full mb-2 size-[30vw] size-[30vh]"
           />
           <h3 class="text-lg font-semibold mb-1">My hobby</h3>
-          <dd class="text-gray-600 text-sm">
+          <dd class="text-gray-800 text-md ">
             My hobbies are traveling, fixing broken cell phones and swimming.
           </dd>
            
         </section>
         
       </section>
-      <section class=" flex  flex-col shadow bg-white mt-8">
+      <section class=" flex flex-col rounded-lg shadow shadow-md bg-white mt-8" aria-label="Dokumentasi">
         <h4 class="text-2xl text-center mt-8 decoration-transparent font-extrabold ">Dokumentasi</h4>
         <article class=" font-bold mt-4"> 
           <h5>
@@ -123,21 +197,21 @@
           </h5>
           </article>
         <details>
-          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+          <iframe class="aspect-video size-[75vw] size-[75vh] object-cover p-6"
              src="Video/Jalan_Jalan.mp4">
           </iframe>
         </details>
         <article class=" font-bold mt-4">
           <h5>Music</h5></article>
         <details>
-          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+          <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Adele_Jalan.mp4">
           </iframe>
         </details>
          <article class=" font-bold mt-4">
           <h5>Swimming</h5></article>
         <details>
-          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+          <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Berenang_Jalan.mp4">
           </iframe>
         </details> 
@@ -145,13 +219,13 @@
          <article class=" font-bold mt-4">
           <h5>Service Handphone</h5></article>
         <details>
-          <iframe class="aspect-video w-1/2 h-1/2 object-cover "
+          <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Service_Jalan.mp4">
           </iframe>
         </details> 
       </section>
     </main> 
-    <footer class="bg-gray-200 text-gray-600 text-center p-4 mt-12 text-sm">
+    <footer class="bg-gray-200 text-gray-600/70 text-center p-4 mt-12 text-md">
       &copy; 2025 Arief Budianto. All rights reserved.
     </footer>
   </body>
