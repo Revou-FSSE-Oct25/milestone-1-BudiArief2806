@@ -73,19 +73,19 @@
   <body
     class="font-roboto bg-[linear-gradient(70deg,rgba(255,150,50,300.1),rgba(0,0,255,0.2))] h-64 w-full "
     >
-    </header>
+
     <main class="max-w-5xl mx-auto p-6 text-md">
       <!-- Profile -->
-      <section
+      <section aria-labelledby="Profile-Utama"
         class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6"
       >
         <img
           src="Image/Budi_Foto.jpg"
-          alt="Shell Logo"
+          alt="Arief Budianto"
           class="w-40 h-40 object-contain rounded-full bg-yellow-400 shadow-md"
         />
-        <nav>
-          <h1 class="text-2xl md:text-3xl font-extrabold text-red-600 mb-2 font-inter " aria-label="portofolio">
+        <header>
+          <h1 id="Profile-Utama" class="text-2xl md:text-3xl font-extrabold text-red-600 mb-2 font-inter ">
             ARIEF BUDIANTO
           </h1>
           <p class="italic text-md mb-2">Student at RevoU 2025</p>
@@ -94,10 +94,10 @@
             management. Hands-on learner committed to building portfolio
             projects using the latest technologies.
           </p>
-        </nav>
+        </header>
       </section>
       <!-- Navigation -->
-      <nav class="flex justify-center flex-wrap gap-4 mt-8 ">
+      <nav aria-label="Menu Utama" class="flex justify-center flex-wrap gap-4 mt-8 ">
         <a
         href="pages/about-me.html"
         class="px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition animate-slide-in-right"
@@ -126,99 +126,101 @@
       </nav>
 
       <!-- Experience & Interests (Grid layout, responsive) -->
-      <section class="mt-12" aria-label = "pengenalan">
-        <h2 class="text-red-600 text-xl md:text-3xl font-bold text-center mb-8">
+      <section class="mt-12" aria-labelledby = "pengenalan">
+        <h2 id="pengenalan" class="text-red-600 text-xl md:text-3xl font-bold text-center mb-8">
           Experience and Interests
         </h2>
-        <nav class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <!-- Card example -->
-          <figure
+          <li>
+           <figure
             class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70" 
-          >
+            >
             <img
               src="Image/Shell_foto.png"
               alt="Experience Shell"
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
             <h3 class="text-lg font-semibold mb-1">SHELL</h3>
-            <dd class="text-gray-800 text-md">
+            <p class="text-gray-800 text-md">
               SPBU Swasta yang memiliki kualitas bahan bakar berkualitas seperti motto perusahaan
-            </dd>
-          </figure>
-          <figure
+            </p>
+           </figure>
+          </li>
+          <li>
+           <figure
             class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
-          aria-label = "Shift Manager">
+            aria-labelledby = "Shift Manager">
             <img
               src="Image/Budi_Foto.jpg"
               alt="Shift Manager"
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
-            <h3 class="text-lg font-semibold mb-1">Shift Manager</h3>
-            <dd class="text-gray-800 text-md">
+            <h3 id="Shift Manager" class="text-lg font-semibold mb-1">Shift Manager</h3>
+            <p class="text-gray-800 text-md">
               Mengatur operasional, absensi, sales.<br />Best employee.
-            </dd>
-          </figure>
-          <figure
+            </p>
+           </figure>
+          </li>
+          <li>
+            <figure
             class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
-          >
+           >
             <img
               src="Image/Bekasi_kota.png"
               alt="Bekasi Kota"
               class="w-20 h-20 object-contain rounded-full mb-2"
             />
             <h3 class="text-lg font-semibold mb-1">Bekasi Kota</h3>
-            <dd class="text-gray-800 text-md">
+            <p class="text-gray-800 text-md">
               Kota kelahiran,penuh pembelajaran dan kenangan.
-            </dd>
-          </figure>
-          </nav>
-         <section class=" mt-8 items-center text-center animate-slide-in-top" >
+            </p>
+            </figure>
+          </li>
+        </ul>
+      <section class=" mt-8 items-center text-center animate-slide-in-top" >
           <figure
           class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600/70"
           >
           <img
           src="Image/Adventure_Foto.jpg"
-          alt="My hooby"
+          alt="My Hobby"
           class=" flex inline-flex rounded-full mb-2 size-[30vw] size-[30vh]"
           />
           <h3 class="text-lg font-semibold mb-1">My hobby</h3>
-          <dd class="text-gray-800 text-md ">
+          <p class="text-gray-800 text-md ">
             My hobbies are traveling, fixing broken cell phones and swimming.
-          </dd>
+          </p>
            
-        </section>
+      </section>
         
       </section>
       <section class=" flex flex-col rounded-lg shadow shadow-md bg-white mt-8" aria-label="Dokumentasi">
-        <h4 class="text-2xl text-center mt-8 decoration-transparent font-extrabold ">Dokumentasi</h4>
-        <article class=" font-bold mt-4"> 
-          <h5>
+        <article class=" font-bold mb-4"> 
+        <h2 id="Dokumentasi" class="text-2xl text-center mt-8 decoration-transparent font-extrabold ">Dokumentasi</h2>
+        </article>
+          <details>
+            <summary class="font-face ">
           My trip and adventure
-          </h5>
-          </article>
-        <details>
+            </summary>
           <iframe class="aspect-video size-[75vw] size-[75vh] object-cover p-6"
              src="Video/Jalan_Jalan.mp4">
           </iframe>
         </details>
-        <article class=" font-bold mt-4">
-          <h5>Music</h5></article>
         <details>
+          <summary class=" font-face mt-4">Music</summary>
           <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Adele_Jalan.mp4">
           </iframe>
         </details>
-         <article class=" font-bold mt-4">
-          <h5>Swimming</h5></article>
         <details>
+          <summary class="font-face mt-4">Swimming</summary>
           <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Berenang_Jalan.mp4">
           </iframe>
         </details> 
-        </details>
-         <article class=" font-bold mt-4">
-          <h5>Service Handphone</h5></article>
         <details>
+          <summary class="font-face mt-4">Service Handphone</summary>
           <iframe class="aspect-video size-[75vw] size-[75vh] object-cover "
              src="Video/Service_Jalan.mp4">
           </iframe>
